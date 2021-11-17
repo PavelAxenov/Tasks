@@ -1,0 +1,39 @@
+/*
+ * Задача 5: «Найти гласные»
+ *
+ * Напишите функцию findVowels(str), принимающую на вход кириллическую
+ * строку str  и возвращающую количество гласных, содержащихся в этой строке.
+ * Для вашего удобства вот массив кириллических гласных:
+ * 
+ * ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'].
+ *
+*/
+
+
+
+function findVowels(str) {
+    let acc = 0;
+    const vowels = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+
+   for (let char of str.toLowerCase()) {
+       if (vowels.includes(char)) {
+           acc += 1;
+       };       
+   };
+   return acc;
+};
+
+// Нашел вариант решения с использованием метода match
+
+// function findVowels(str) {
+//     const matched = str.match(/[аяоёуюыиэе]/gi);
+//     return matched ? matched.length : 0;
+// }
+
+
+
+// Протестируйте решение, вызывая функцию с разными аргументами:
+
+console.log(findVowels('здравствуй')); // 2
+console.log(findVowels('привет')); // 2
+console.log(findVowels('хеллоу')); // 3
