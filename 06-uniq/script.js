@@ -17,7 +17,7 @@ function uniq(arr) {
     return result;
 };
 
-// Нашел метод Set в инете
+// Вариант решения через метод Set
 
 // function uniq(arr) {
 //     return Array.from(new Set(arr));
