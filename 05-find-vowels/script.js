@@ -23,7 +23,7 @@ function findVowels(str) {
    return acc;
 };
 
-// Нашел вариант решения с использованием метода match
+// Вариант решения с использованием метода match
 
 // function findVowels(str) {
 //     const matched = str.match(/[аяоёуюыиэе]/gi);
